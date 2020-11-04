@@ -1,5 +1,4 @@
 # Release
-
 - name: Checkout Project
   uses: actions/checkout@v2
 - name: Setup Java JDK
