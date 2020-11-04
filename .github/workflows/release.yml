@@ -1,9 +1,9 @@
-- name: Release
-    uses: qcastel/github-actions-maven-release@master
-    with:
-      release-branch-name: "main"
+name: Release
+uses: qcastel/github-actions-maven-release@master
+with:
+  release-branch-name: "main"
 
-      git-release-bot-name: "release-bot"
-      git-release-bot-email: "michaellieshoff@gmx.de"
+  git-release-bot-name: "release-bot"
+  git-release-bot-email: "michaellieshoff@gmx.de"
 
-      access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+  access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
