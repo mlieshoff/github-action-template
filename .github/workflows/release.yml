@@ -1,6 +1,6 @@
 # Release
 - name: Checkout Project
-  uses: actions/checkout@main
+  uses: actions/checkout@v2.3.4
 - name: Setup Java JDK
   uses: actions/setup-java@v1.4.2
   with:
