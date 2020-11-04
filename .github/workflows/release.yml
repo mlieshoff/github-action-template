@@ -1,9 +1,15 @@
-name: Release
-uses: qcastel/github-actions-maven-release@master
-with:
-  release-branch-name: "main"
+- name: Setup Java JDK
+  uses: actions/setup-java@v1.4.2
+  with:
+    java-version: 14
+    server-id: github
 
-  git-release-bot-name: "release-bot"
-  git-release-bot-email: "michaellieshoff@gmx.de"
+- name: Configure Git user
+  run: |
+    git config user.email "actions@github.com"
+    git config user.name "GitHub Actions"
 
-  access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+- name: Publish JAR
+  run: ./mvnw -B release:prepare release:perform
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
