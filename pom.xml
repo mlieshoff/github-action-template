@@ -24,6 +24,9 @@
         <system>GitHub</system>
         <url>https://github.com/mlieshoff/github-action-template/issues</url>
     </issueManagement>
+    <scm>
+        <developerConnection>scm:git:https://github.com/mlieshoff/github-action-template/github-action-template.git</developerConnection>
+    </scm>
     <licenses>
         <license>
             <name>Apache License Version 2.0</name>
@@ -108,8 +111,9 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/mlieshoff/maven/github-action-template</url>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/mlieshoff/github-action-template</url>
         </repository>
     </distributionManagement>
     <repositories>
