@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>github-action-template</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.M1.${revision}</version>
+    <version>1.1.M1.${revision}-SNAPSHOT</version>
     <groupId>github-action-template</groupId>
     <url>http://maven.apache.org</url>
     <inceptionYear>2020</inceptionYear>
@@ -26,7 +26,7 @@
     </issueManagement>
     <scm>
         <developerConnection>scm:git:https://github.com/mlieshoff/github-action-template.git</developerConnection>
-      <tag>github-action-template-1.0.M1.${revision}</tag>
+      <tag>HEAD</tag>
   </scm>
     <licenses>
         <license>
