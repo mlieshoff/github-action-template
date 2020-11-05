@@ -25,7 +25,7 @@
         <url>https://github.com/mlieshoff/github-action-template/issues</url>
     </issueManagement>
     <scm>
-        <developerConnection>scm:git:https://github.com/mlieshoff/github-action-template/github-action-template.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/mlieshoff/github-action-template.git</developerConnection>
     </scm>
     <licenses>
         <license>
