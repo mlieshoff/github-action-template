@@ -18,5 +18,4 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run:
-        echo "::set-env name=PR_NUMBER::$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")"
-        mvn -Drevision=${{ github.event.pull_request.number }} -B package --file pom.xml
+        mvn -Drevision=${{github.event.number}} -B package --file pom.xml
