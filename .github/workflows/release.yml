@@ -26,6 +26,6 @@ jobs:
 
       - name: Publish JAR
         run:
-          ./mvnw -Drevision=${{github.event.number}} -B release:prepare release:perform
+          ./mvnw -Drevision="pr${{github.event.number}}" -B release:prepare release:perform
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
