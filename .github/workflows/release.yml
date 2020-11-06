@@ -1,4 +1,4 @@
-# Release job
+# This workflows starts release whenever a PR is merged to main
 name: Release
 
 on:
@@ -30,6 +30,6 @@ jobs:
       - name: Publish JAR
         if: github.event.pull_request.merged == true
         run:
-          ./mvnw -Drevision="pr${{github.event.number}}" -B release:prepare release:perform
+          ./mvnw -B release:prepare release:perform
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
