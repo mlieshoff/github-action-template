@@ -109,25 +109,10 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub</name>
-            <url>https://maven.pkg.github.com/mlieshoff/github-action-template</url>
-        </repository>
-        <repository>
             <id>bintray</id>
             <url>https://api.bintray.com/maven/mlieshoff/maven/github-action-template</url>
         </repository>
     </distributionManagement>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray-plugins</name>
-            <url>https://jcenter.bintray.com</url>
-        </pluginRepository>
-    </pluginRepositories>
     <repositories>
         <repository>
             <id>mlieshoff-repo</id>
@@ -138,14 +123,6 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray</name>
-            <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
 </project>
