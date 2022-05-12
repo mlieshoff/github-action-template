@@ -109,19 +109,19 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/mlieshoff/maven/github-action-template</url>
+            <id>packagecloud</id>
+            <url>packagecloud+https://packagecloud.io/mlieshoff/github-action-template</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>mlieshoff-repo</id>
-            <url>http://dl.bintray.com/mlieshoff/maven</url>
+            <id>mlieshoff-test</id>
+            <url>https://packagecloud.io/mlieshoff/github-action-template/maven2</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
